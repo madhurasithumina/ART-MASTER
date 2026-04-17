@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125" fill="none">
+  <defs>
+    <linearGradient id="pap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FAFAF9"/>
+      <stop offset="1" stop-color="#FEE2E2"/>
+    </linearGradient>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 0 0.07  0 0 0 0.09 0"/>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <rect x="34" y="34" width="832" height="1057" rx="48" fill="url(#pap)"/>
+
+  <!-- framed tablet -->
+  <path d="M160 220c86-92 494-92 580 0" stroke="#0F172A" stroke-width="10" stroke-linecap="round" stroke-dasharray="3 20" opacity="0.5"/>
+  <path d="M160 906c86 92 494 92 580 0" stroke="#0F172A" stroke-width="10" stroke-linecap="round" stroke-dasharray="3 20" opacity="0.5"/>
+
+  <!-- ancient animal outline (stylized) -->
+  <path d="M290 650c30-110 92-184 186-214 78-24 152 6 192 72 22 36 26 84 8 122-16 36-50 60-90 66-22 4-42 2-62-6-26 26-58 44-96 54-64 16-122 0-138-24" stroke="#0F172A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <path d="M520 520c18-10 40-10 58 0" stroke="#0F172A" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M450 650c22 20 50 28 86 22" stroke="#0F172A" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- decorative lines -->
+  <path d="M240 780c140 44 280 44 420 0" stroke="#0F172A" stroke-width="8" stroke-linecap="round" opacity="0.25"/>
+  <path d="M260 340c110-34 270-34 380 0" stroke="#0F172A" stroke-width="8" stroke-linecap="round" opacity="0.22"/>
+
+  <rect x="34" y="34" width="832" height="1057" rx="48" filter="url(#grain)" opacity="0.18"/>
+</svg>

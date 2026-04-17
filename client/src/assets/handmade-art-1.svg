@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.1  0 0 0 0 0.12  0 0 0 0.08 0"/>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- paper card -->
+  <rect x="34" y="34" width="832" height="1057" rx="48" fill="url(#paper)"/>
+
+  <!-- sketch border -->
+  <path d="M98 116c-12 44-24 152-22 246 4 186 0 331 2 507 1 102 13 176 21 215" stroke="#0F172A" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 22" opacity="0.55"/>
+  <path d="M802 116c12 44 24 152 22 246-4 186 0 331-2 507-1 102-13 176-21 215" stroke="#0F172A" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 22" opacity="0.55"/>
+  <path d="M130 108c108-18 192-26 320-24 168 3 275 8 328 24" stroke="#0F172A" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 22" opacity="0.55"/>
+  <path d="M130 1016c108 18 192 26 320 24 168-3 275-8 328-24" stroke="#0F172A" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 22" opacity="0.55"/>
+
+  <!-- abstract hand-drawn flower -->
+  <path d="M450 310c-54-74-137-39-128 32 8 62 90 47 128-5 38 52 120 67 128 5 9-71-74-106-128-32Z" stroke="#0F172A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <path d="M450 348c-10 70-4 138 8 214" stroke="#0F172A" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <path d="M390 548c36 8 74 10 120 0" stroke="#0F172A" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- tiny scribbles -->
+  <path d="M210 742c40-18 92-16 140 4" stroke="#0F172A" stroke-width="8" stroke-linecap="round" opacity="0.35"/>
+  <path d="M560 740c46-24 96-22 132 6" stroke="#0F172A" stroke-width="8" stroke-linecap="round" opacity="0.35"/>
+  <path d="M250 832c70 26 160 26 260 0" stroke="#0F172A" stroke-width="8" stroke-linecap="round" opacity="0.25"/>
+
+  <rect x="34" y="34" width="832" height="1057" rx="48" filter="url(#grain)" opacity="0.18"/>
+</svg>
